@@ -29,7 +29,7 @@ def show():
             st.write("")  # Espaço vazio para centralização
 
         with col2:
-            st.image("images/perfil.jpg", width=200)  # Foto de perfil
+            st.image("images/perfil2.jpg", width=200)  # Foto de perfil
 
         with col3:  # Conteúdo centralizado
             st.write(
