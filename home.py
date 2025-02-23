@@ -4,50 +4,59 @@ from cursos import show as show_cursos
 
 def show():
     # Nome em destaque
-    st.markdown(
-        """
-        <h1 style="text-align: center;">Kauan Rodrigues Lima</h1>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-
-    # Layout: Foto + Texto sobre mim (Centralizado)
-    col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
+    col1, col2, col3 = st.columns([1, 4, 1])  # Colunas para centralizar o conteúdo da página
 
     with col1:
-        st.write("")  # Espaço vazio para centralização
+        st.write("")
 
     with col2:
-        st.image("images/perfil.jpg", width=200)  # Foto de perfil
-
-    with col3:  # Conteúdo centralizado
-        st.write(
+        st.markdown(
             """
-            Desenvolvedor Back-End especializado em Django e Django Rest Framework (DRF).
-            Tenho experiência no desenvolvimento de aplicações web completas, APIs escaláveis
-            e automação de processos. Utilizo **Docker, AWS e GitHub Actions** para otimizar
-            a implantação e manutenção de sistemas.
-
-            Minhas soluções vão além do código, trazendo **automação, integração com APIs**
-            e práticas modernas para tornar as aplicações mais eficientes e seguras.
-            """
+            <h1 style="text-align: center;">Kauan Rodrigues Lima</h1>
+            """,
+            unsafe_allow_html=True
         )
 
-    with col4:
-        st.write("")  # Espaço vazio para centralização
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
 
-    st.write("---")
+        # Layout: Foto + Texto sobre mim (Centralizado)
+        col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
 
-    show_skills_and_tools()  # Exibição das habilidades e ferramentas
+        with col1:
+            st.write("")  # Espaço vazio para centralização
 
-    st.write("---")
+        with col2:
+            st.image("images/perfil.jpg", width=200)  # Foto de perfil
 
-    show_cursos()  # Exibição dos cursos e certificações
+        with col3:  # Conteúdo centralizado
+            st.write(
+                """
+                Desenvolvedor Back-End especializado em Django e Django Rest Framework (DRF).
+                Tenho experiência no desenvolvimento de aplicações web completas, APIs escaláveis
+                e automação de processos. Utilizo **Docker, AWS e GitHub Actions** para otimizar
+                a implantação e manutenção de sistemas.
+
+                Minhas soluções vão além do código, trazendo **automação, integração com APIs**
+                e práticas modernas para tornar as aplicações mais eficientes e seguras.
+                """
+            )
+
+        with col4:
+            st.write("")  # Espaço vazio para centralização
+
+        st.write("---")
+
+        show_skills_and_tools()  # Exibição das habilidades e ferramentas
+
+        st.write("---")
+
+        show_cursos()  # Exibição dos cursos e certificações
+
+    with col3:
+        st.write("")
 
 
 def show_skills_and_tools():

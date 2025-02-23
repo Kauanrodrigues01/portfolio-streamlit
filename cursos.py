@@ -27,8 +27,8 @@ def show():
     with col1:
         for curso, horas, plataforma, link in cursos01:  # Primeiro grupo de cursos
             st.markdown(f"##### {curso}")
-            st.markdown(f"<span style='font-size: 14px;'>Duração: {horas}</span>", unsafe_allow_html=True)
-            st.markdown(f"<span style='font-size: 14px;'>Plataforma: {plataforma}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 14px;'>Duração: <strong>{horas}</strong></span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 14px;'>Plataforma: <strong>{plataforma}</strong></span>", unsafe_allow_html=True)
             st.markdown(f"<span style='font-size: 14px;'><a href='{link}' target='_blank'>Ver Certificado</a></span>", unsafe_allow_html=True)
 
             st.markdown("---")  # Linha entre os cursos
@@ -36,8 +36,8 @@ def show():
     with col2:
         for curso, horas, plataforma, link in cursos02:  # Segundo grupo de cursos
             st.markdown(f"##### {curso}")
-            st.markdown(f"<span style='font-size: 14px;'>Duração: {horas}</span>", unsafe_allow_html=True)
-            st.markdown(f"<span style='font-size: 14px;'>Plataforma: {plataforma}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 14px;'>Duração: <strong>{horas}</strong></span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 14px;'>Plataforma: <strong>{plataforma}</strong></span>", unsafe_allow_html=True)
             st.markdown(f"<span style='font-size: 14px;'><a href='{link}' target='_blank'>Ver Certificado</a></span>", unsafe_allow_html=True)
 
             st.markdown("---")  # Linha entre os cursos
