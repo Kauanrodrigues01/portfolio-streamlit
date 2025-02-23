@@ -36,7 +36,26 @@ def show():
             st.write("Área em construção...")
 
         with st.expander("Flix API - API para Catálogo de Filmes"):
-            st.write("Área em construção...")
+            col1, col2, col3 = st.columns([1, 2, 1])
+            with col1:
+                st.write("")
+            with col2:
+                st.image("images/projetos/flix-api/swagger.png", width=800)
+            with col3:
+                st.write("")
+                
+            st.write("O Flix API é uma API para gerenciar um catálogo de filmes, com funcionalidades de CRUD, busca, filtros e autenticação de usuários. Com documentação interativa, facilita o desenvolvimento de aplicações front-end e integrações com outras plataformas.")
+
+            st.write("A API foi projetada para ser simples e eficiente, oferecendo funcionalidades completas, como:")
+            st.markdown("- Cadastro e gerenciamento de filmes, gêneros, atores, avaliações.")
+            st.markdown("- Busca de filmes por título, gênero, popularidade, data de lançamento.")
+            st.markdown("- Autentificação de usuários com JWT.")
+            st.markdown("- Documentação interativa com Swagger.")
+
+            st.write("Tecnologias utilizadas:")
+            st.markdown("- Back-end: Django, Django Rest Framework, PostgreSQL")
+            st.markdown("- Docker gerenciamento de containers")
+            st.markdown("🔗[Ver projeto](https://github.com/Kauanrodrigues01/flix-api)")
 
         with st.expander("Teacherhunt - API de Busca de Professores Particulares"):
             col1, col2, col3 = st.columns([1, 2, 1])
