@@ -7,15 +7,15 @@ st.set_page_config(page_title="Portfólio Kauan Rodrigues Lima", page_icon="imag
 # Sidebar com opção de menu
 with st.sidebar:
     selected = option_menu(
-        menu_title="Navegação",  
-        options=["Início", "Projetos", "Assistente Virtual"],  
-        icons=["house", "code", "chat"],  
-        menu_icon="cast",  
-        default_index=0  
+        menu_title="Navegação",
+        options=["Início", "Projetos", "Assistente Virtual"],
+        icons=["house", "code", "chat"],
+        menu_icon="cast",
+        default_index=0
     )
-    
+
     st.write('---')
-    
+
     # Informações de contato
     st.markdown("### Contato")
     st.write("LinkedIn: [Kauan Rodrigues Lima](https://www.linkedin.com/in/kauan-rodrigues-lima-727486321/)")

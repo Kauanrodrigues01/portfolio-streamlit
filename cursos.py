@@ -1,10 +1,11 @@
 import streamlit as st
 
+
 def show():
     st.markdown("## Cursos e Certificações")
     st.write('')
     st.write('')
-    
+
     # Cursos e Certificações
     cursos01 = [
         ("Django Master - Aplicações Web", "45 horas", "Pycodebr", "Ainda-vou-adicionar-o-link"),
