@@ -55,21 +55,21 @@ def show_skills_and_tools():
     
     # Imagens representando as habilidades
     skills = [
-        ("Python", "images/python-dark-icon.svg"),
-        ("Django", "images/django-icon.svg"),
-        ("Postgres", "images/postgres-light-icon.svg"),
-        ("MySQL", "images/mysql-light-icon.svg"),
-        ("AWS", "images/aws-light-icon.svg"),
-        ("Docker", "images/docker-icon.svg"),
-        ("Git", "images/git-icon.svg"),
-        ("GitHub", "images/github-dark-icon.svg"),
-        ("VSCode", "images/vscode-light-icon.svg"),
-        ("Linux", "images/linux-light-icon.svg"),
-        ("Nginx", "images/nginx-icon.svg"),
-        ("CSS", "images/css-icon.svg"),
-        ("HTML", "images/html-icon.svg"),
-        ("Bootstrap", "images/bootstrap-icon.svg"),
-        ("Postman", "images/postman-icon.svg")
+        ("Python", "images/icons/python-dark-icon.svg"),
+        ("Django", "images/icons/django-icon.svg"),
+        ("Postgres", "images/icons/postgres-light-icon.svg"),
+        ("MySQL", "images/icons/mysql-light-icon.svg"),
+        ("AWS", "images/icons/aws-light-icon.svg"),
+        ("Docker", "images/icons/docker-icon.svg"),
+        ("Git", "images/icons/git-icon.svg"),
+        ("GitHub", "images/icons/github-dark-icon.svg"),
+        ("VSCode", "images/icons/vscode-light-icon.svg"),
+        ("Linux", "images/icons/linux-light-icon.svg"),
+        ("Nginx", "images/icons/nginx-icon.svg"),
+        ("CSS", "images/icons/css-icon.svg"),
+        ("HTML", "images/icons/html-icon.svg"),
+        ("Bootstrap", "images/icons/bootstrap-icon.svg"),
+        ("Postman", "images/icons/postman-icon.svg")
     ]
 
     
