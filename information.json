@@ -1,0 +1,24 @@
+{
+    "habilidades": "As habilidades de Kauan incluem: Django, Python, DRF, SQL, APIs RESTful, e muito mais.",
+    "projetos": [
+        {
+            "nome": "Sistema de Gestão de Estoque (SGE)",
+            "descricao": "O SGE é uma plataforma para gerenciar estoques de maneira eficiente, controlando produtos, fornecedores e movimentações de entradas e saídas. Utiliza inteligência artificial para sugerir reposição de estoque e otimizar a gestão, além de gerar gráficos e métricas sobre vendas e produtos.",
+            "tecnologias": ["Django", "Python", "PostgreSQL", "Celery", "Redis", "Docker", "IA", "Bootstrap", "Chart.js"],
+            "Integracoes": ["Evolution API (WhatsApp)", "Gemini (IA)"]
+
+        }
+    ],
+    "contato": [
+        "No portfolio de Kauan, na barra lateral (sidebar), você pode encontrar links para suas redes sociais e contatos. E na página de contato, você pode encontrar um formulário para enviar uma mensagem diretamente para Kauan.",
+        "Você pode entrar em contato com Kauan pelos seguintes meios:",
+        "E-mail: kauanrl09@gmail.com",
+        "LinkedIn: https://www.linkedin.com/in/kauan-rodrigues-lima-727486321/",
+        "GitHub: https://github.com/Kauanrodrigues01",
+        "Instagram: https://www.instagram.com/kauan_mrl/"
+
+    ],
+    "certificados": "Kauan possui certificados em Django, Python, Docker, IA, entre outros.",
+    "educacao": "Kauan cursa Desenvolvimento de Sistemas na EEEP e estuda tecnologias como Go e Cloud.",
+    "experiencia": "Kauan possui experiência com deploy de aplicações usando Docker, Nginx, uWSGI, Celery, Redis, entre outros."
+}

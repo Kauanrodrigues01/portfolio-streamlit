@@ -1,9 +1,12 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from services.assistant import initialize_assistant
 
 # Configuração da página
 st.set_page_config(page_title="Portfólio Kauan Rodrigues Lima", layout="wide")
-st.logo("images/icons/python-dark.svg", )
+st.logo("images/icons/python-dark.svg")
+
+initialize_assistant()
 
 # Sidebar com opção de menu
 with st.sidebar:

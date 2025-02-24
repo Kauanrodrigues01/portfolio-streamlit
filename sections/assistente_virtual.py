@@ -1,5 +1,8 @@
 import streamlit as st
 from streamlit_chat import message
+from services.assistant import initialize_assistant
+
+assistant = initialize_assistant()
 
 
 # Função que lida com a mudança no campo de entrada
@@ -21,15 +24,8 @@ def on_btn_click():
 def get_bot_response(user_input):
     user_input = user_input.lower()
 
-    # Definindo respostas básicas para algumas perguntas comuns
-    if "habilidades" in user_input:
-        return "As habilidades de Kauan incluem: Django, Python, DRF, SQL, APIs RESTful, e muito mais."
-    elif "projetos" in user_input:
-        return "Kauan desenvolveu projetos como sistemas de gestão de estoque, APIs RESTful, e um sistema de agendamento."
-    elif "contato" in user_input:
-        return "Você pode entrar em contato com Kauan pelo email: kauan@example.com."
-    else:
-        return "Desculpe, não entendi sua pergunta. Tente perguntar sobre habilidades, projetos ou contato."
+    response = assistant.send_message(user_input)
+    return response
 
 
 # Função para exibir o conteúdo do assistente virtual

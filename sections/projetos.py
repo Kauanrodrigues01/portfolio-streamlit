@@ -27,7 +27,7 @@ def show():
                 st.write("")
             st.write("O SGE é uma plataforma para gerenciar estoques de maneira eficiente, controlando produtos, fornecedores e movimentações de entradas e saídas. Utiliza inteligência artificial para sugerir reposição de estoque e otimizar a gestão, além de gerar gráficos e métricas sobre vendas e produtos.")
             st.write("Tecnologias utilizadas:")
-            st.markdown("- Back-end: Django (Python), PostgreSQL, Celery, Redis")
+            st.markdown("- Back-end: Python, Django, PostgreSQL, Celery, Redis")
             st.markdown("- Front-end: Bootstrap, Chart.js")
             st.markdown("- Integrações: API Evolution (WhatsApp) e Gemini (IA)")
             st.markdown("- Docker para deploy e escalabilidade")
