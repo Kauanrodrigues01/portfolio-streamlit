@@ -51,7 +51,6 @@ class Assistant:
         info_messages = [
             "Você é um assistente virtual que irá responder perguntas sobre Kauan Rodrigues Lima. As informações que você deve saber são as seguintes:",
             f"Habilidades: {self.info['habilidades']}",
-            f"Certificados: {self.info['certificados']}",
             f"Educação: {self.info['educacao']}",
             f"Experiência: {self.info['experiencia']}",
             f"Contato: {', '.join(self.info['contato'])}"
@@ -65,8 +64,19 @@ class Assistant:
                 f"Tecnologias: {', '.join(projeto['tecnologias'])}\n"
                 f"Integrações: {', '.join(projeto['Integracoes'])}\n"
             )
+
+        certificados_info = "Certificados: "
+        for certificado in self.info['certificados']:
+            certificados_info += (
+                f"\nNome: {certificado['nome']}\n"
+                f"Carga Horária: {certificado['carga_horaria']}\n"
+                f"Instituição: {certificado['instituicao']}\n"
+                f"Data: {certificado['data']}\n"
+                f"Link: {certificado['link']}\n"
+            )
         
         info_messages.append(projeto_info)
+        info_messages.append(certificados_info)
         
         for message in info_messages:
             self.chat.send_message(message)

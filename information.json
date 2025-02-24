@@ -18,7 +18,64 @@
         "Instagram: https://www.instagram.com/kauan_mrl/"
 
     ],
-    "certificados": "Kauan possui certificados em Django, Python, Docker, IA, entre outros.",
-    "educacao": "Kauan cursa Desenvolvimento de Sistemas na EEEP e estuda tecnologias como Go e Cloud.",
+    "certificados": [
+        {
+            "nome": "Django Master - Aplicações Web",
+            "instituicao": "Pycodebr",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "45 horas"
+        },
+        {
+            "nome": "IA Master - Integração com IA, RAG, LangChain, Agents de IA",
+            "instituicao": "Pycodebr",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "20 horas"
+        },
+        {
+            "nome": "Integration Master - Integração de Sistemas",
+            "instituicao": "Pycodebr",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "10 horas"
+        },
+        {
+            "nome": "AWS Cloud Foundations",
+            "instituicao": "AWS academy",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "15 horas"
+        },
+        {
+            "nome": "Google AI Essentials",
+            "instituicao": "Google",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "8 horas"
+        },
+        {
+            "nome": "Docker: do Básico ao Avançado",
+            "instituicao": "Udemy",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "13 horas"
+        },
+        {
+            "nome": "Django Web Framework e Django Rest Framework (DRF)",
+            "instituicao": "Udemy",
+            "data": "2024",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "79 horas"
+        },
+        {
+            "nome": "Python 3 do Básico ao Avançado",
+            "instituicao": "Udemy",
+            "data": "2024",
+            "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "141 horas"
+        }
+    ],
+    "educacao": "Kauan cursa Desenvolvimento de Sistemas na EEEP e estuda tecnologias como Python, Django, DRF, Docker, Golang, segurança em aplicações web e outros... Kauan também faz cursos online como os da udemy, alura, pycodebr, entre outros. Para mais informações, veja as informações sobre os certificados de Kauan.",
     "experiencia": "Kauan possui experiência com deploy de aplicações usando Docker, Nginx, uWSGI, Celery, Redis, entre outros."
 }
