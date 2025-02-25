@@ -1,16 +1,16 @@
 {
-    "habilidades": "As habilidades de Kauan incluem: Django, Python, DRF, SQL, APIs RESTful, e muito mais.",
+    "habilidades": "As habilidades de Kauan Rodrigues Luma incluem: Django, Python, DRF, SQL, APIs RESTful, HTML, CSS, JavaScript, git, github, postman, banco de dados relacionais, docker, docker-compose, deploy na AWS utilizando instâncias EC2 e RDS, Um nível legal de linux, Básico de JavaScript (Manipulação de DOM e etc...). O Kauan é capaz de desenvolver aplicações web completas, desde o backend até o frontend, utilizando tecnologias como Django, Python, DRF, HTML, CSS e JavaScript. Além disso, Kauan possui conhecimentos em integração de APIs, deploy de aplicações, segurança em aplicações web e desenvolvimento de sistemas. Também possui conhecimentos em IA, RAG, LangChain, Agents de IA, AWS, Docker, entre outros. Construiu aplicações full-stack com django, html, css. Construiu APIs utilizando Django e DRF. Aprendi a dockerizar minhas aplicações django e python, usar usuários não privilégiados no container, otimizar a imagem, usar multistage build, subir containers nginx para conectar a aplicação que usa uwsgi através de uma conexão unix socket, subir containers celery, redis, rabbit, postgres e etc..",
     "projetos": [
         {
             "nome": "Sistema de Gestão de Estoque (SGE)",
-            "descricao": "O SGE é uma plataforma para gerenciar estoques de maneira eficiente, controlando produtos, fornecedores e movimentações de entradas e saídas. Utiliza inteligência artificial para sugerir reposição de estoque e otimizar a gestão, além de gerar gráficos e métricas sobre vendas e produtos.",
+            "descricao": "O SGE é uma plataforma para gerenciar estoques de maneira eficiente, controlando produtos, fornecedores e movimentações de entradas e saídas. Utiliza inteligência artificial para sugerir reposição de estoque e otimizar a gestão, além de gerar gráficos e métricas sobre vendas e produtos. sistema de gestão de estoque com django e Bootstrap, com gráficos e metricas usando chart.js, conectado com IA, API do WhatsApp para notificar o 'gerente' da aplicação pelo WhatsApp quando houver saída de produtos, envio de emails com o Django para notificação, celery e celery beat para processar tarefas agendadas como o geração diária do feedback da IA e processar tarefas mais lentas como o envio de emails. Construi um sistema de gerenciamento de alunos onde é possível cadastrar alunos, gerenciar alunos ativos, pendentes, gerenciar mensalidade de alunos, registrar pagamentos dos alunos. Quando a mensalidade de um aluno acaba ele é notificado no WhatsApp utilizando uma integração com uma API e é enviado um link de pagamento gerado através da API de pagamento do mercado pago, quando o aluno paga o mercado oago envia um webhook para url do meu sistema e meu sistema processa essas informações atualiza o pagamentodo aluno, coloca ele como ativo e notifica o dono da academia ou coisa do gênero que possia alunos.Pode ver coisas como lucros por mês, lucro por ano e etc...",
             "tecnologias": ["Django", "Python", "PostgreSQL", "Celery", "Redis", "Docker", "IA", "Bootstrap", "Chart.js"],
             "Integracoes": ["Evolution API (WhatsApp)", "Gemini (IA)"]
 
         },
         {
             "nome": "ChatBot com IA - Projeto Python e IA",
-            "descricao": "O ChatBot com IA é um projeto que utiliza inteligência artificial para criar um assistente virtual que responde perguntas e interage com os usuários. Com integração com APIs de IA, o ChatBot é capaz de aprender e melhorar suas respostas ao longo do tempo.",
+            "descricao": "O ChatBot com IA é um projeto que utiliza inteligência artificial para criar um assistente virtual PERSONALIZADO (Treinado com RAG, com as minhas informações e com o que eu quero) que responde perguntas e interage com os usuários. Com integração com APIs de IA, o ChatBot é capaz de aprender e melhorar suas respostas ao longo do tempo. O front-end foi desenvolvido com Streamlit.",
             "tecnologias": ["Python", "LangChain", "Streamlit", "APIs de IA"],
             "Integracoes": ["APIs de IA (OpenAI)"]
         },
@@ -85,10 +85,17 @@
             "carga_horaria": "8 horas"
         },
         {
-            "nome": "Docker: do Básico ao Avançado",
+            "nome": "Segurança em Aplicações Web",
             "instituicao": "Udemy",
             "data": "2025",
             "link": "https://www.udemy.com/certificate/UC-4b3b3b3b-4b3b-4b3b-4b3b-4b3b3b3b3b3b/",
+            "carga_horaria": "7,5 horas"
+        },
+        {
+            "nome": "Docker: do Básico ao Avançado",
+            "instituicao": "Udemy",
+            "data": "2025",
+            "link": "https://www.udemy.com/certificate/UC-11245ba7-611e-4881-9493-25a872612d16/",
             "carga_horaria": "13 horas"
         },
         {

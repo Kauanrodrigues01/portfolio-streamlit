@@ -144,7 +144,8 @@ def show_cursos():
         ("IA Master - Integração com IA, RAG, LangChain, Agents de IA", "20 horas", "Pycodebr", "Ainda-vou-adicionar-o-link"),
         ("AWS Cloud Foundations", "15 horas", "AWS academy", "Ainda-vou-adicionar-o-link"),
         ("Google AI Essentials", "8 horas", "Google", "Ainda-vou-adicionar-o-link"),
-        ("Docker: do Básico ao Avançado", "13 horas", "Udemy", "Ainda-vou-adicionar-o-link"),
+        ("Docker: do Básico ao Avançado", "13 horas", "Udemy", "https://www.udemy.com/certificate/UC-11245ba7-611e-4881-9493-25a872612d16/"),
+        ("Segurança em Aplicações Web", "7,5 horas", "Udemy", "Ainda-vou-adicionar-o-link"),
     ]
 
     # Dividindo em duas colunas
