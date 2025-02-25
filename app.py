@@ -23,42 +23,52 @@ pg.run()
 
 # # Sidebar com opção de menu
 with st.sidebar:
-    # selected = option_menu(
-    #     menu_title="Navegação",
-    #     menu_icon="layout-sidebar",
-    #     options=["Início", "Projetos", "Contato", "Assistente Virtual"],
-    #     icons=["house", "code", "person", "chat"],
-    #     default_index=0
-    # )
-
     # Informações de contato com ícones
     link_linkedin = st.secrets["links_contato"]["linkedin"]
     link_github = st.secrets["links_contato"]["github"]
     link_instagram = st.secrets["links_contato"]["instagram"]
     link_email = st.secrets["links_contato"]["email"]
+    icons_path = "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/refs/heads/main/icons/portfolio"
 
     st.markdown("### Contato")
+    
+    html_code = f"""
+        <style>
+            .contact-links a {{
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }}
+            .contact-links a:hover {{
+                color: blue;
+            }}
+        </style>
 
-    col1, col2 = st.columns([1, 8], gap="small")
-    with col1:
-        st.image("images/icons/linkedin.svg", width=20)
-    with col2:
-        st.write(f"[Kauan Rodrigues Lima]({link_linkedin})")
+        <div class="contact-links" style="display: flex; flex-direction: column; gap: 8px;">
 
-    col1, col2 = st.columns([1, 8], gap="small")
-    with col1:
-        st.image("images/icons/github-dark.svg", width=20)
-    with col2:
-        st.write(f"[Kauanrodrigues01]({link_github})")
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="{icons_path}/linkedin.svg" width="20">
+                <a href="{link_linkedin}" target="_blank">Kauan Rodrigues Lima</a>
+            </div>
 
-    col1, col2 = st.columns([1, 8], gap="small")
-    with col1:
-        st.image("images/icons/instagram.svg", width=20)
-    with col2:
-        st.write(f"[kauan_mrl]({link_instagram})")
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="{icons_path}/github-dark.svg" width="20">
+                <a href="{link_github}" target="_blank">Kauanrodrigues01</a>
+            </div>
 
-    col1, col2 = st.columns([1, 8], gap="small")
-    with col1:
-        st.image("images/icons/gmail-dark.svg", width=20)
-    with col2:
-        st.write(f"[kauanrl09@gmail.com]({link_email})")
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="{icons_path}/instagram.svg" width="20">
+                <a href="{link_instagram}" target="_blank">kauan_mrl</a>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="{icons_path}/gmail-dark.svg" width="20">
+                <a href="{link_email}" target="_blank">kauanrl09@gmail.com</a>
+            </div>
+
+        </div>
+    """
+    
+    html_code = html_code.replace("\n", "").replace("    ", "")
+    
+    st.markdown(html_code, unsafe_allow_html=True)

@@ -42,7 +42,7 @@ def show():
             st.write("Área em construção...")
 
         # FLIX APP
-        with st.expander("Flix App - Aplicativo de Catálogo de Filmes com Streamlit"):
+        with st.expander("Flix App - Web App de Catálogo de Filmes com Streamlit"):
             st.write("Área em construção...")
 
         # FLIX API
@@ -87,7 +87,7 @@ def show():
             st.markdown("- Autentificação e recuperação de contas com JWT.")
             st.markdown("- Documentação interativa com Swagger.")
             st.write("Tecnologias utilizadas:")
-            st.markdown("- Back-end: Django, Django Rest Framework, PostgreSQL")
+            st.markdown("- Back-end: Django, Django Rest Framework, PostgreSQL, Docker")
 
         # BLOG DE RECEITAS
         with st.expander("Blog de Receitas - Projeto Django FullStack"):
@@ -116,7 +116,7 @@ def show():
             st.write("")
 
             st.write("Tecnologias utilizadas:")
-            st.markdown("- Back-end: Django")
+            st.markdown("- Back-end: Python, Django")
             st.markdown("- Front-end: HTML, CSS, JavaScript")
 
             st.write("")

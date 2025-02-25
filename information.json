@@ -7,6 +7,36 @@
             "tecnologias": ["Django", "Python", "PostgreSQL", "Celery", "Redis", "Docker", "IA", "Bootstrap", "Chart.js"],
             "Integracoes": ["Evolution API (WhatsApp)", "Gemini (IA)"]
 
+        },
+        {
+            "nome": "ChatBot com IA - Projeto Python e IA",
+            "descricao": "O ChatBot com IA é um projeto que utiliza inteligência artificial para criar um assistente virtual que responde perguntas e interage com os usuários. Com integração com APIs de IA, o ChatBot é capaz de aprender e melhorar suas respostas ao longo do tempo.",
+            "tecnologias": ["Python", "LangChain", "Streamlit", "APIs de IA"],
+            "Integracoes": ["APIs de IA (OpenAI)"]
+        },
+        {
+            "nome": "Flix APP - Web App de Catálogo de Filmes",
+            "descricao": "O Flix APP é um web app para visualizar e buscar filmes em um catálogo online. Com funcionalidades de busca, filtros, favoritos e avaliações, o Flix APP permite aos usuários encontrar e recomendar filmes de forma rápida e prática.",
+            "tecnologias": ["Python", "Streamlit"],
+            "Integracoes": ["Flix API (API de Catálogo de Filmes)"]
+        },
+        {
+            "nome": "Flix API - API para Catálogo de Filmes",
+            "descricao": "O Flix API é uma API para gerenciar um catálogo de filmes, com funcionalidades de CRUD, busca, filtros e autenticação de usuários. Com documentação interativa, facilita o desenvolvimento de aplicações front-end e integrações com outras plataformas.",
+            "tecnologias": ["Django", "Python", "DRF", "PostgreSQL", "Docker", "Swagger"],
+            "Integracoes": ["Não tem integrações com APIs externas"]
+        },
+        {
+            "nome": "Teacherhunt - API de Busca de Professores Particulares",
+            "descricao": "O Teacherhunt é uma API para conectar alunos e professores particulares de forma rápida e prática. Com filtros de busca, avaliações e chat integrado, facilita a contratação de aulas particulares. Funcionalidades como: Cadastro e gerenciamento de professores e alunos, Busca de professores por matéria de interesse, Agendamento, aceitação e cancelamento de aulas, Avaliações e favoritos para professores, Redefinição de senha e ativação de conta por email, Autentificação e recuperação de contas com JWT, Documentação interativa com Swagger",
+            "tecnologias": ["Django", "Python", "DRF", "PostgreSQL", "Docker", "Swagger"],
+            "Integracoes": ["Não tem integrações com APIs externas"]
+        },
+        {
+            "nome": "Alura Space - Projeto Django FullStack",
+            "descricao": "Alura Space é uma aplicação Django desenvolvida durante a formação da Alura sobre python e Djnago, essa aplicação permite: gerenciar e compartilhar imagens. É uma galeria de imagens que permite aos usuários fazer upload, editar, buscar, favoritar e curtir imagens. Além disso, os usuários podem gerenciar seus perfis, visualizar suas imagens e interagir com o conteúdo através de likes e favoritos. Funcionalidades como: Cadastro e autenticação de usuários, Gestão de imagens: upload, edição, busca, favoritos, curtidas, Busca e filtros de imagens por categoria, nome e autor, Perfis de usuários com informações e imagens favoritas",
+            "tecnologias": ["Django", "Python", "PostgreSQL", "HTML", "CSS", "JavaScript"],
+            "Integracoes": ["Não tem integrações com APIs externas"]
         }
     ],
     "contato": [
