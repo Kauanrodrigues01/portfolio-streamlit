@@ -61,7 +61,7 @@ def show():
         # Entrada do usuário
         input_message = st.text_input("Digite sua pergunta:", key="user_input", help="Exemplo: Quais são as habilidades do Kauan?", on_change=on_input_change)
 
-        # st.button("Enviar", on_click=on_input_change)
+        st.button("Enviar", on_click=on_input_change)
 
         # Botão para limpar o histórico de mensagens
         st.button("Limpar mensagens", on_click=on_btn_click)
