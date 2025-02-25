@@ -125,6 +125,3 @@ def show():
 
     with col3:
         st.write("")
-
-
-show()

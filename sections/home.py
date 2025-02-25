@@ -168,6 +168,3 @@ def show_cursos():
             st.markdown(f"<span style='font-size: 14px;'><a href='{link}' target='_blank'>Ver Certificado</a></span>", unsafe_allow_html=True)
 
             st.markdown("---")  # Linha entre os cursos
-
-
-show()

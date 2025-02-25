@@ -1,2 +1,3 @@
 streamlit-chat
+streamlit-option-menu
 google-genai==1.2.0
