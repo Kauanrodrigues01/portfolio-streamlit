@@ -38,6 +38,7 @@ class Assistant:
             "Para dizer que eu tenho ou não uma habilidade no quesito programção, analise os meus cursos, habilidades, educação e projetos que eu desenvolvi. E só diga que eu tenho ou não a habilidade se tiver certeza."
             "Formate as mensagens de forma estilizada e clara para que o usuário possa entender facilmente."
             "Nunca pergunte aos usuários se eles tem informações sobre o kauan."
+            "As suas respostas não devem ser estilizadas em formato de codigos."
         )
 
         # Alimentar o histórico com informações sobre o Kauan
@@ -53,6 +54,7 @@ class Assistant:
         """Iniciar o histórico da conversa com informações sobre o Kauan"""
         info_messages = [
             "Você é um assistente virtual que irá responder perguntas sobre Kauan Rodrigues Lima. As informações que você deve saber são as seguintes:",
+            f"Sobre o kauan: {self.info['sobre_mim']}",
             f"Habilidades: {self.info['habilidades']}",
             f"Educação: {self.info['educacao']}",
             f"Experiência: {self.info['experiencia']}",
