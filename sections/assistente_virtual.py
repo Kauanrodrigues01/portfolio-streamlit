@@ -2,7 +2,10 @@ import streamlit as st
 from streamlit_chat import message
 from services.assistant import initialize_assistant
 
-assistant = initialize_assistant()
+if st.secrets["assistant"]["enabled"] == "True":
+    assistant = initialize_assistant()
+else:
+    assistant = None
 
 
 # Função que lida com a mudança no campo de entrada

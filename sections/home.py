@@ -61,30 +61,70 @@ def show():
 def show_skills_and_tools():
     st.markdown("## Habilidades e Ferramentas")
     st.write('')
+    
+    icons_path = "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/refs/heads/main/icons/portfolio"
 
     skills = [
-        ("Python", "images/icons/python-dark.svg"),
-        ("Django", "images/icons/django.svg"),
-        ("Postgres", "images/icons/postgres-light.svg"),
-        ("MySQL", "images/icons/mysql-light.svg"),
-        ("AWS", "images/icons/aws-light.svg"),
-        ("Docker", "images/icons/docker.svg"),
-        ("Git", "images/icons/git.svg"),
-        ("GitHub", "images/icons/github-dark.svg"),
-        ("VSCode", "images/icons/vscode-light.svg"),
-        ("Linux", "images/icons/linux-light.svg"),
-        ("Nginx", "images/icons/nginx.svg"),
-        ("CSS", "images/icons/css.svg"),
-        ("HTML", "images/icons/html.svg"),
-        ("Bootstrap", "images/icons/bootstrap.svg"),
-        ("Postman", "images/icons/postman.svg")
+        ("Python", f"{icons_path}/python-dark.svg"),
+        ("Django", f"{icons_path}/django.svg"),
+        ("Postgres", f"{icons_path}/postgres-light.svg"),
+        ("MySQL", f"{icons_path}/mysql-light.svg"),
+        ("AWS", f"{icons_path}/aws-light.svg"),
+        ("Docker", f"{icons_path}/docker.svg"),
+        ("Git", f"{icons_path}/git.svg"),
+        ("GitHub", f"{icons_path}/github-dark.svg"),
+        ("VSCode", f"{icons_path}/vscode-light.svg"),
+        ("Linux", f"{icons_path}/linux-light.svg"),
+        ("Nginx", f"{icons_path}/nginx.svg"),
+        ("CSS", f"{icons_path}/css.svg"),
+        ("HTML", f"{icons_path}/html.svg"),
+        ("Bootstrap", f"{icons_path}/bootstrap.svg"),
+        ("Postman", f"{icons_path}/postman.svg")
     ]
 
-    cols = st.columns(len(skills))
+    # Adiciona o estilo flexbox com CSS
+    st.markdown(
+        """
+        <style>
+            .skills-container {
+                display: flex;
+                flex-wrap: wrap; /* Faz os ícones quebrarem de linha conforme necessário */
+                justify-content: center; /* Alinha os ícones no centro */
+                gap: 20px; /* Espaçamento entre os ícones */
+            }
+            .skill-item {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .skill-item img {
+                width: 50px;
+            }
+            .skill-item caption {
+                font-size: 10px;
+                margin-top: 5px;
+                color: #777;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-    for i, (skill, icon) in enumerate(skills):
-        with cols[i]:
-            st.image(icon, width=60, caption=skill,)
+    # Cria a estrutura de habilidades com flexbox e loop
+    skill_html = '<div class="skills-container">'
+    for skill, icon in skills:
+        skill_html += f'''
+            <div class="skill-item">
+                <img src="{icon}" alt="{skill}">
+                <caption>{skill}</caption>
+            </div>
+        '''.strip()  # Remove espaços desnecessários ou quebras de linha extras
+    skill_html += '</div>'
+
+    # Exibe o HTML gerado
+    st.markdown(skill_html, unsafe_allow_html=True)
 
 
 def show_cursos():

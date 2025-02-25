@@ -6,7 +6,9 @@ from services.assistant import initialize_assistant
 st.set_page_config(page_title="Portfólio Kauan Rodrigues Lima", layout="wide")
 st.logo("images/icons/python-dark.svg")
 
-initialize_assistant()
+
+if st.secrets["assistant"]["enabled"] == "True":
+    initialize_assistant()
 
 # Sidebar com opção de menu
 with st.sidebar:
