@@ -31,3 +31,6 @@ def show():
                         st.error("❌ Ocorreu um erro ao enviar a mensagem. Tente novamente.")
             else:
                 st.warning("⚠️ Preencha todos os campos antes de enviar.")
+
+
+show()

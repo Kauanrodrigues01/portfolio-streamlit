@@ -1,6 +1,6 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 from services.assistant import initialize_assistant
+
 
 # Configuração da página
 st.set_page_config(page_title="Portfólio Kauan Rodrigues Lima", layout="wide")
@@ -10,17 +10,26 @@ st.logo("images/icons/python-dark.svg")
 if st.secrets["assistant"]["enabled"] == "True":
     initialize_assistant()
 
-# Sidebar com opção de menu
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Navegação",
-        menu_icon="layout-sidebar",
-        options=["Início", "Projetos", "Contato", "Assistente Virtual"],
-        icons=["house", "code", "person", "chat"],
-        default_index=0
-    )
+pages = [
+    st.Page("pages/home.py", title="Início", default=True),
+    st.Page("pages/projetos.py", title="Projetos"),
+    st.Page("pages/contato.py", title="Contato"),
+    st.Page("pages/assistente_virtual.py", title="Assistente Virtual")
+]
 
-    st.write('---')
+pg = st.navigation(pages, position="sidebar", expanded=True)
+
+pg.run()
+
+# # Sidebar com opção de menu
+with st.sidebar:
+    # selected = option_menu(
+    #     menu_title="Navegação",
+    #     menu_icon="layout-sidebar",
+    #     options=["Início", "Projetos", "Contato", "Assistente Virtual"],
+    #     icons=["house", "code", "person", "chat"],
+    #     default_index=0
+    # )
 
     # Informações de contato com ícones
     link_linkedin = st.secrets["links_contato"]["linkedin"]
@@ -53,22 +62,3 @@ with st.sidebar:
         st.image("images/icons/gmail-dark.svg", width=20)
     with col2:
         st.write(f"[kauanrl09@gmail.com]({link_email})")
-
-
-# Importação dinâmica das páginas
-if selected == "Início":
-    from sections import home
-    home.show()
-
-elif selected == "Projetos":
-    from sections import projetos
-    projetos.show()
-
-
-elif selected == "Contato":
-    from sections import contato
-    contato.show()
-
-elif selected == "Assistente Virtual":
-    from sections import assistente_virtual
-    assistente_virtual.show()

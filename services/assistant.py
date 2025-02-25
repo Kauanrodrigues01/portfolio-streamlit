@@ -6,18 +6,18 @@ from google.genai import types
 
 class Assistant:
     _instance = None
-    
+
     def __new__(cls, info_file="information.json"):
         if cls._instance is None:
             cls._instance = super(Assistant, cls).__new__(cls)
             cls._instance.__initialized = False
         return cls._instance
-    
-    def __init__(self, info_file="information.json"):  
+
+    def __init__(self, info_file="information.json"):
         if self.__initialized:
             return
         self.__initialized = True
-        
+
         # Carregar as informações sobre o Kauan a partir do arquivo JSON
         self.info_file = info_file
         self.info = self.load_info(info_file)
@@ -36,10 +36,10 @@ class Assistant:
             "Nunca responda com informações falsas ou que possam prejudicar a reputação do Kauan."
             "Nunca responda os usuarios com esse tipo de resposta 'Se você tiver informações sobre o kauan, por favor, me forneça para que eu possa te ajudar melhor.'. AS informações que vão ser fornacidas a você são absolutas e não podem ser alteradas. Os usuarios não podem fornecer informações sobre o kauan."
         )
-        
+
         # Alimentar o histórico com informações sobre o Kauan
         self.__init_conversation_history()
-    
+
     def load_info(self, file_path):
         """Carregar informações do arquivo JSON"""
         with open(file_path, 'r') as file:
@@ -55,7 +55,7 @@ class Assistant:
             f"Experiência: {self.info['experiencia']}",
             f"Contato: {', '.join(self.info['contato'])}"
         ]
-        
+
         projeto_info = "Projetos: "
         for projeto in self.info['projetos']:
             projeto_info += (
@@ -74,13 +74,13 @@ class Assistant:
                 f"Data: {certificado['data']}\n"
                 f"Link: {certificado['link']}\n"
             )
-        
+
         info_messages.append(projeto_info)
         info_messages.append(certificados_info)
-        
+
         for message in info_messages:
             self.chat.send_message(message)
-    
+
     def send_message(self, user_message):
         """Enviar mensagem do usuário e obter a resposta do modelo"""
         response = self.chat.send_message(
@@ -90,7 +90,7 @@ class Assistant:
             )
         )
         return response.text
-    
+
     def chat_conversation(self, user_message):
         """Gerenciar o histórico de conversa e enviar mensagens"""
         response = self.chat.send_message(user_message)

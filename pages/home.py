@@ -61,7 +61,7 @@ def show():
 def show_skills_and_tools():
     st.markdown("## Habilidades e Ferramentas")
     st.write('')
-    
+
     icons_path = "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/refs/heads/main/icons/portfolio"
 
     skills = [
@@ -167,3 +167,6 @@ def show_cursos():
             st.markdown(f"<span style='font-size: 14px;'><a href='{link}' target='_blank'>Ver Certificado</a></span>", unsafe_allow_html=True)
 
             st.markdown("---")  # Linha entre os cursos
+
+
+show()
