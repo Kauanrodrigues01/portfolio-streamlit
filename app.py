@@ -16,8 +16,8 @@ with st.sidebar:
     selected_page = option_menu(
         menu_title="Navegação",
         menu_icon="cast",
-        options=["Início", "Projetos", "Contato", "Assistente Virtual"],
-        icons=["house", "code", "envelope", "chat"],
+        options=["Início", "Projetos", "Educação", "Contato", "Assistente Virtual"],
+        icons=["house-fill", "code-slash", "mortarboard-fill", "envelope-arrow-up-fill", "chat-fill"],
     )
     # Informações de contato com ícones
     link_linkedin = st.secrets["links_contato"]["linkedin"]
@@ -77,6 +77,10 @@ if selected_page == "Início":
 
 elif selected_page == "Projetos":
     from sections.projetos import show
+    show()
+
+elif selected_page == "Educação":
+    from sections.educacao import show
     show()
 
 elif selected_page == "Contato":
